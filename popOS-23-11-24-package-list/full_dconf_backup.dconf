@@ -1,0 +1,59 @@
+[org/gnome/desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
+color-scheme='prefer-dark'
+cursor-size=64
+enable-animations=true
+enable-hot-corners=true
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-rgba-order='rgb'
+gtk-theme='Sweet-Dark-v40'
+icon-theme='pop-os-branding'
+locate-pointer=true
+monospace-font-name='Geist Mono 11'
+scaling-factor=uint32 2
+text-scaling-factor=1.0
+toolkit-accessibility=false
+
+[org/gnome/desktop/wm/keybindings]
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='lower'
+button-layout='appmenu:minimize,maximize,close'
+theme='HighContrast'
+visual-bell=false
+
+[org/gnome/mutter]
+edge-tiling=false
+experimental-features=['x11-randr-fractional-scaling']
+workspaces-only-on-primary=true
+
+[org/gnome/shell/extensions/pop-shell]
+active-hint=true
+active-hint-border-radius=uint32 3
+hint-color-rgba='rgba(84,32,136,0.570946)'
+show-title=false
+tile-by-default=true
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>t'
+command='warp-terminal'
+name='Launch terminal (warp)'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+font='MesloLGS NF 12'
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sort-directories-first=false
