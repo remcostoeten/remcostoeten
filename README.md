@@ -1,58 +1,39 @@
-# About Me
+# Remco Stoeten
 
-I'm a Dutch software engineer specializing in front-end development. Currently, I'm building large-scale SaaS at Exact Online. My background includes open-source government projects, SaaS, and B2B/B2C e-commerce development with Magento 2.
-
-My personal projects are primarily built with NextJS, TypeScript, and Postgres/SQLite, but I also dabble in React, Vanilla JS, Go, Python, Shell, NIX, Lua, and whatever is needed for the task.
-
-# Current Projects
-
-While I'm busy with full-time employment, I'm also working on two main projects in public:
-
-## [RollYourOwnAuth](https://github.com/remcostoeten/nextjs-15-roll-your-own-authentication)
-
-**RollYourOwnAuth** is a comprehensive, customizable authentication solution for the JavaScript ecosystem. It eliminates the need for third-party libraries like NextAuth, Clerk, or Lucia, allowing you to own your data completely.
+Dutch front-end developer with a graphic design degree, currently building LMS for students. Experience spans B2B/B2C e-commerce, open-source government projects, and large-scale SaaS.
 
 <details>
-  <summary>Features</summary>
+<summary>Current Projects</summary>
 
-  - **JWT Tokens**: Secure authentication with JSON Web Tokens.
-  - **Database Management**: Postgres sessions and management.
-  - **Roles & Privileges**: Admin roles with specific privileges.
-  - **User Management**: Email and password sign-up, social OAuth, user-profile management, and top-level user & session management for admins.
-  - **Emails**: Integrated email functionality.
-  - **Utilities**: Hooks and SSR for managing protected, role-based components.
-  - **Middleware**: Route protection and management.
-  - **Analytics & Metrics**: Custom, self-hosted user analytics and metrics.
-  - **CRUD Operations**: Reusable entity creators and fetchers.
+**[RYOA - Roll Your Own Authentication](https://github.com/remcostoeten/nextjs-15-roll-your-own-authentication)**  
+Feature-rich, library-less auth flow showcasing superior DX
+
+**NOTR**  
+Aesthetic markdown desktop app built with Tauri (Rust, TypeScript, SQLite)
+
+**[Interactive File Tree Component](https://beautiful-interactive-file-tree-4gt98z889.vercel.app/)**  
+Beautiful file tree interface
+
+**[Aesthetic Code Block Component](https://beautifull-code-block-git-main-remcostoetens-projects.vercel.app/)**  
+Syntax highlighting component
 
 </details>
 
-## [All-in-One Panel](https://github.com/remcostoeten/nextjs-lucia-neon-postgresql-drizzle-dashboard/tree/master)
+<details>
+<summary>Tools & CLIs</summary>
 
-**All-in-One Panel** is a dashboard that includes everything I need. Features are scattered across multiple repositories and local-only projects. Eventually, everything will be merged here. Unmerged features include finance management, note/code snippet management, calendar, custom auth, CSV parser (and other types), peripheral (mic, cam) tester & recorder, file storage vault, and much more.
+- [Turso DB Creator](https://github.com/remcostoeten/Turso-db-creator-auto-retrieve-env-credentials) - Auto retrieve env credentials
+- [Docki](https://github.com/remcostoeten/Docki) - Auto insert JSDoc with AI  
+- [GitHub CLI Extension](https://github.com/remcostoeten/gh-cli-extension-easy-copy-clone-repository) - Easy copy clone repository
 
-# Other Projects
+</details>
 
-Besides the main projects, my repositories include a variety of other projects such as:
+## Tech Stack
 
-- Beautiful code-syntax block displayer
-- File-tree + code displayer/navigator for custom docs
-- HTML to TSX app
-- Emoji-feedback app
-- Flask WhatsApp scraper
-- WhatsApp history displayer
-- GitHub & Vercel metrics dashboard in Express
-- Password manager PoC
-- Go-lang CLI bookmark manager
-- Custom commitizen adapter
-- Dozens of portfolio designs
-- Dashboard UIs, boilerplates, showcases, and more
+**Frontend:**  Primairly NextJS, but open to all. Except knockoutJS
 
-[![telegram @remcostoeten](https://img.shields.io/static/v1?&color=111&style=flat-square&logoColor=f5f5f5&label=&message=linkedin&logo=linkedin)](https://www.linkedin.com/in/remco-stoeten/)
-[![mail stoetenremco.rs@gmail.com](https://img.shields.io/static/v1?&color=111&style=flat-square&logoColor=f5f5f5&label=&message=email&logo=gmail)](mailto:stoetenremco.rs@gmail.com)
+Currently learning: Architecture, design patterns, scalability, and backend development with Bun + Hono
 
-<div align="center" dir="auto">
- <img style="max-width: 100%;" src="https://streak-stats.demolab.com/?user=remcostoeten&theme=transparent&hide_border=true&date_format=M%20j[,%20Y]&card_width=1080&stroke=FFFFFF&ring=FFFFFF&fire=FFFFFF&currStreakNum=FFFFFF&currStreakLabel=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF&background=45%2CEB7C00%2CEBCC0A&border_radius=12" />
-</div>
+---
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=remcostoeten&label=Profile%20views&color=0e75b6&style=flat" alt="remcostoeten" /> </p>
+*150+ repositories and counting...*
