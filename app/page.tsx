@@ -30,11 +30,24 @@ export default function Portfolio() {
     // Load theme preference
     const savedTheme = localStorage.getItem("theme")
     if (savedTheme) {
-      setIsDark(savedTheme === "dark")
+      const isDarkTheme = savedTheme === "dark"
+      setIsDark(isDarkTheme)
+      // Set the dark class on document.documentElement
+      if (isDarkTheme) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
     } else {
       // Detect system preference
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
       setIsDark(prefersDark)
+      // Set the dark class on document.documentElement
+      if (prefersDark) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
     }
 
     checkMobile()
@@ -61,6 +74,13 @@ export default function Portfolio() {
       const newTheme = !isDark
       setIsDark(newTheme)
       localStorage.setItem("theme", newTheme ? "dark" : "light")
+
+      // Toggle the 'dark' class on document.documentElement
+      if (newTheme) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
       return
     }
 
@@ -69,6 +89,13 @@ export default function Portfolio() {
       const newTheme = !isDark
       setIsDark(newTheme)
       localStorage.setItem("theme", newTheme ? "dark" : "light")
+
+      // Toggle the 'dark' class on document.documentElement
+      if (newTheme) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
     })
 
     // Wait for the transition to complete
@@ -226,7 +253,7 @@ export default function Portfolio() {
             style={{ transitionDelay: isLoaded ? "600ms" : "0ms" }}
           >
             <p className={`text-[15px] leading-[1.6] font-normal ${isDark ? "text-gray-300" : "text-gray-700"}`}>
-              Recently I've been building{" "}
+              Recently I&apos;ve been building{" "}
               <GitHubPreview
                 url="https://github.com/remcostoeten/nextjs-15-roll-your-own-authentication"
                 className={`transition-colors duration-200 underline decoration-dotted underline-offset-[3px] font-medium ${
