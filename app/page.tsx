@@ -111,14 +111,47 @@ export default function Portfolio() {
   }
 
   return (
-    <div
-      className={`min-h-screen transition-colors duration-500 ${
-        isDark
-          ? "bg-gradient-to-br from-[#1a1a1a] via-[#1a1a1a] to-[#171717] text-white"
-          : "bg-gradient-to-br from-white via-white to-gray-50 text-gray-900"
-      }`}
-      style={{ viewTransitionName: "main-background" }}
-    >
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Remco Stoeten",
+            "jobTitle": "Frontend Developer",
+            "description": "Frontend developer specializing in TypeScript, React & Next.js. Building scalable web applications from Magento 2 e-commerce platforms to modern SaaS solutions.",
+            "url": "https://remcostoeten.nl",
+            "email": "remcostoeten@hotmail.com",
+            "sameAs": [
+              "https://github.com/remcostoeten",
+              "https://linkedin.com/in/remco-stoeten"
+            ],
+            "knowsAbout": [
+              "TypeScript",
+              "React",
+              "Next.js",
+              "Magento 2",
+              "Frontend Development",
+              "Web Development",
+              "SaaS Development"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "All You Can Learn",
+              "url": "https://allyoucanlearn.nl"
+            }
+          })
+        }}
+      />
+      <div
+        className={`min-h-screen transition-colors duration-500 ${
+          isDark
+            ? "bg-gradient-to-br from-[#1a1a1a] via-[#1a1a1a] to-[#171717] text-white"
+            : "bg-gradient-to-br from-white via-white to-gray-50 text-gray-900"
+        }`}
+        style={{ viewTransitionName: "main-background" }}
+      >
       {/* Desktop theme toggle */}
       <button
         onClick={toggleTheme}
@@ -187,10 +220,10 @@ export default function Portfolio() {
         </div>
       </button>
 
-      <div className="container mx-auto px-6 py-16 max-w-4xl">
+      <main className="container mx-auto px-6 py-16 max-w-4xl">
         <div className="space-y-6">
           {/* Main heading */}
-          <div
+          <header
             className={`mb-10 transition-all duration-800 ease-out ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -203,10 +236,10 @@ export default function Portfolio() {
             >
               I craft digital experiences.
             </h1>
-          </div>
+          </header>
 
           {/* Experience section */}
-          <div
+          <section
             className={`mb-8 transition-all duration-800 ease-out ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -243,10 +276,10 @@ export default function Portfolio() {
               </a>
               , a comprehensive LMS platform for Dutch MBO students and citizenship education.
             </p>
-          </div>
+          </section>
 
           {/* Recent projects section */}
-          <div
+          <section
             className={`mb-8 transition-all duration-800 ease-out ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -261,26 +294,9 @@ export default function Portfolio() {
                     ? "text-green-400 hover:text-green-300 decoration-green-400/60"
                     : "text-green-600 hover:text-green-700 decoration-green-600/60"
                 }`}
-                screenshots={[
-                  {
-                    src: "/screenshots/login.png",
-                    alt: "Authentication Login",
-                    title: "Secure authentication with social login options",
-                  },
-                  {
-                    src: "/screenshots/profile.png",
-                    alt: "User Profile",
-                    title: "User profile management and settings",
-                  },
-                  {
-                    src: "/screenshots/dashboard.png",
-                    alt: "Dashboard",
-                    title: "Analytics dashboard with real-time monitoring",
-                  },
-                ]}
               >
                 roll-your-own authentication ↗
-              </GitHubPreview>{" "}
+              </GitHubPreview>
               and{" "}
               <GitHubPreview
                 url="https://github.com/remcostoeten/Turso-db-creator-auto-retrieve-env-credentials"
@@ -289,16 +305,9 @@ export default function Portfolio() {
                     ? "text-green-400 hover:text-green-300 decoration-green-400/60"
                     : "text-green-600 hover:text-green-700 decoration-green-600/60"
                 }`}
-                screenshots={[
-                  {
-                    src: "/screenshots/turso-demo.gif",
-                    alt: "Turso CLI Demo",
-                    title: "Automated Turso database creation and environment setup",
-                  },
-                ]}
               >
                 Turso database automation ↗
-              </GitHubPreview>{" "}
+              </GitHubPreview>
               . More projects and experiments can be found on{" "}
               <a
                 href="https://github.com/remcostoeten"
@@ -313,10 +322,10 @@ export default function Portfolio() {
               </a>{" "}
               .
             </p>
-          </div>
+          </section>
 
           {/* Contact section */}
-          <div
+          <section
             className={`mb-8 transition-all duration-800 ease-out ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -373,10 +382,10 @@ export default function Portfolio() {
               </a>{" "}
               .
             </p>
-          </div>
+          </section>
 
           {/* Timezone section */}
-          <div
+          <section
             className={`pb-20 md:pb-0 transition-all duration-800 ease-out ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
@@ -420,9 +429,10 @@ export default function Portfolio() {
               </span>{" "}
               .
             </p>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     </div>
+    </>
   )
 }
