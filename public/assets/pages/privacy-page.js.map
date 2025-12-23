@@ -1,0 +1,1 @@
+{"version":3,"file":"privacy-page.js","sourceRoot":"","sources":["../../../src/pages/privacy-page.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,MAAM,sBAAsB,CAAC;AACrD,OAAO,EAAE,eAAe,EAAE,MAAM,0BAA0B,CAAC;AAE3D,MAAM,UAAU,WAAW,CAAC,IAAc;IACxC,QAAQ,CAAC,KAAK,GAAG,IAAI,CAAC,GAAG,CAAC,OAAO,CAAC;IAClC,OAAO,eAAe,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;AACvC,CAAC"}
