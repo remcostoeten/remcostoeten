@@ -1,0 +1,17 @@
+{
+  "name": "remcostoeten",
+  "version": "1.0.0",
+  "description": "Static policy pages with bilingual navigation.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

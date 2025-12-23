@@ -1,0 +1,1 @@
+{"version":3,"file":"terms-page.js","sourceRoot":"","sources":["../../../src/pages/terms-page.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,MAAM,sBAAsB,CAAC;AACrD,OAAO,EAAE,aAAa,EAAE,MAAM,wBAAwB,CAAC;AAEvD,MAAM,UAAU,SAAS,CAAC,IAAc;IACtC,QAAQ,CAAC,KAAK,GAAG,IAAI,CAAC,GAAG,CAAC,KAAK,CAAC;IAChC,OAAO,aAAa,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;AACnC,CAAC"}
